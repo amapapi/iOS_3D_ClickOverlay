@@ -61,6 +61,8 @@ BOOL isOverlayWithLineWidthContainsPoint(id<MAOverlay> overlay, double mapPointD
     return NO;
 }
 
+#pragma mark - math
+
 /*!
  计算点P到线段AB的距离
  @param pointP 点P
@@ -94,8 +96,6 @@ double distanceBetweenPointAndLineFromPointAtoPointB(MAMapPoint pointP, MAMapPoi
     
     return sqrt(squareLengthOfVector(vectorCP));
 }
-
-#pragma mark - math
 
 /*!
  计算点到点的向量

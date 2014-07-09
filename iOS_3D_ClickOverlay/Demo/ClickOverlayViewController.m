@@ -8,8 +8,6 @@
 
 #import "ClickOverlayViewController.h"
 
-#import <MAMapKit/MAOverlayView.h>
-
 #import "SelectableOverlay.h"
 
 #import "Utility.h"
@@ -87,16 +85,6 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
-    if (gestureRecognizer == self.singleTap && ([touch.view isKindOfClass:[UIControl class]] || [touch.view isKindOfClass:[MAAnnotationView class]]))
-    {
-        return NO;
-    }
-    
-    if (gestureRecognizer == self.doubleTap && [touch.view isKindOfClass:[UIControl class]])
-    {
-        return NO;
-    }
-    
     return YES;
 }
 
@@ -108,18 +96,20 @@
     
     NSLog(@"touchLocation (%f %f) zoomLevel %f", touchLocation.x, touchLocation.y, self.mapView.zoomLevel);
     
+    /* 逆序遍历overlay判断单击点是否在overlay响应区域内. */
     [self.mapView.overlays enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id<MAOverlay> overlay, NSUInteger idx, BOOL *stop)
     {
         if ([overlay isKindOfClass:[SelectableOverlay class]])
         {
             SelectableOverlay *selectableOverlay = overlay;
             
+            /* 获取overlay对应的view. */
             MAOverlayPathView * View = (MAOverlayPathView *)[self.mapView viewForOverlay:selectableOverlay];
             
             /* 把屏幕坐标转换为MAMap坐标. */
             MAMapPoint mapPoint = MAMapPointForCoordinate([self.mapView convertPoint:touchLocation toCoordinateFromView:self.mapView]);
-            
-            double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * View.lineWidth;
+            /* overlay的线宽换算到MAMap坐标系的宽度. */
+            double mapPointDistance = View.lineWidth * [self mapPointsPerPointInViewAtCurrentZoomLevel];
 
             /* 判断是否选中了overlay. */
             if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
