@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C8471073196B968500ED0DD7"
-               BuildableName = "iOS_3D_ClickOverlay.app"
-               BlueprintName = "iOS_3D_ClickOverlay"
+               BuildableName = "ClickOverlayDemo.app"
+               BlueprintName = "ClickOverlayDemo"
                ReferencedContainer = "container:iOS_3D_ClickOverlay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C8471073196B968500ED0DD7"
-            BuildableName = "iOS_3D_ClickOverlay.app"
-            BlueprintName = "iOS_3D_ClickOverlay"
+            BuildableName = "ClickOverlayDemo.app"
+            BlueprintName = "ClickOverlayDemo"
             ReferencedContainer = "container:iOS_3D_ClickOverlay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C8471073196B968500ED0DD7"
-            BuildableName = "iOS_3D_ClickOverlay.app"
-            BlueprintName = "iOS_3D_ClickOverlay"
+            BuildableName = "ClickOverlayDemo.app"
+            BlueprintName = "ClickOverlayDemo"
             ReferencedContainer = "container:iOS_3D_ClickOverlay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C8471073196B968500ED0DD7"
-            BuildableName = "iOS_3D_ClickOverlay.app"
-            BlueprintName = "iOS_3D_ClickOverlay"
+            BuildableName = "ClickOverlayDemo.app"
+            BlueprintName = "ClickOverlayDemo"
             ReferencedContainer = "container:iOS_3D_ClickOverlay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

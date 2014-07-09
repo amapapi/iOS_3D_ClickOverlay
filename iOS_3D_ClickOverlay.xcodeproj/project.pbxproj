@@ -27,6 +27,9 @@
 		C847118A196BF44100ED0DD7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471189196BF44100ED0DD7 /* MAMapKit.framework */; };
 		C847118C196BF47300ED0DD7 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C847118B196BF47300ED0DD7 /* AMap.bundle */; };
 		C847118F196BF5F600ED0DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C847118D196BF5F600ED0DD7 /* Main.storyboard */; };
+		C8F1DB25196D10CC007BC6EC /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB22196D10CC007BC6EC /* icon-40@2x.png */; };
+		C8F1DB26196D10CC007BC6EC /* icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB23196D10CC007BC6EC /* icon-29@2x.png */; };
+		C8F1DB27196D10CC007BC6EC /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB24196D10CC007BC6EC /* icon-60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		C8471189196BF44100ED0DD7 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = iOS_3D_ClickOverlay/extern/MAMapKit.framework; sourceTree = "<group>"; };
 		C847118B196BF47300ED0DD7 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = iOS_3D_ClickOverlay/extern/MAMapKit.framework/Versions/2.2.1.1650.60159/Resources/AMap.bundle; sourceTree = "<group>"; };
 		C847118E196BF5F600ED0DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8F1DB22196D10CC007BC6EC /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40@2x.png"; path = "Resources/icon-40@2x.png"; sourceTree = "<group>"; };
+		C8F1DB23196D10CC007BC6EC /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29@2x.png"; path = "Resources/icon-29@2x.png"; sourceTree = "<group>"; };
+		C8F1DB24196D10CC007BC6EC /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60@2x.png"; path = "Resources/icon-60@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,9 @@
 		C847107E196B968500ED0DD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8F1DB22196D10CC007BC6EC /* icon-40@2x.png */,
+				C8F1DB23196D10CC007BC6EC /* icon-29@2x.png */,
+				C8F1DB24196D10CC007BC6EC /* icon-60@2x.png */,
 				C8471186196BF42200ED0DD7 /* InfoPlist.strings */,
 				C8471183196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Info.plist */,
 				C8471184196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Prefix.pch */,
@@ -160,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C8471073196B968500ED0DD7 /* iOS_3D_ClickOverlay */ = {
+		C8471073196B968500ED0DD7 /* ClickOverlayDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C84710A6196B968600ED0DD7 /* Build configuration list for PBXNativeTarget "iOS_3D_ClickOverlay" */;
+			buildConfigurationList = C84710A6196B968600ED0DD7 /* Build configuration list for PBXNativeTarget "ClickOverlayDemo" */;
 			buildPhases = (
 				C8471070196B968500ED0DD7 /* Sources */,
 				C8471071196B968500ED0DD7 /* Frameworks */,
@@ -172,7 +181,7 @@
 			);
 			dependencies = (
 			);
-			name = iOS_3D_ClickOverlay;
+			name = ClickOverlayDemo;
 			productName = iOS_3D_ClickOverlay;
 			productReference = C8471074196B968500ED0DD7 /* iOS_3D_ClickOverlay.app */;
 			productType = "com.apple.product-type.application";
@@ -199,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8471073196B968500ED0DD7 /* iOS_3D_ClickOverlay */,
+				C8471073196B968500ED0DD7 /* ClickOverlayDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -210,10 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C847118C196BF47300ED0DD7 /* AMap.bundle in Resources */,
+				C8F1DB26196D10CC007BC6EC /* icon-29@2x.png in Resources */,
 				C847118F196BF5F600ED0DD7 /* Main.storyboard in Resources */,
 				C8471188196BF42200ED0DD7 /* InfoPlist.strings in Resources */,
 				C8471185196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Info.plist in Resources */,
 				C847117D196BF38900ED0DD7 /* Images.xcassets in Resources */,
+				C8F1DB25196D10CC007BC6EC /* icon-40@2x.png in Resources */,
+				C8F1DB27196D10CC007BC6EC /* icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C84710A6196B968600ED0DD7 /* Build configuration list for PBXNativeTarget "iOS_3D_ClickOverlay" */ = {
+		C84710A6196B968600ED0DD7 /* Build configuration list for PBXNativeTarget "ClickOverlayDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C84710A7196B968600ED0DD7 /* Debug */,
