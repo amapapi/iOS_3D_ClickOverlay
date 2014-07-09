@@ -26,6 +26,8 @@ BOOL isOverlayWithLineWidthContainsPoint(id<MAOverlay> overlay, double mapPointD
  */
 BOOL isMAPolylineNearPointAtDistanceThreshold(MAPolyline *polyline, MAMapPoint point, double threshold);
 
+#pragma mark - math
+
 /*!
  计算点P到线段AB的距离
  @param pointP 点P
@@ -34,8 +36,6 @@ BOOL isMAPolylineNearPointAtDistanceThreshold(MAPolyline *polyline, MAMapPoint p
  @return 点P到线段AB的距离
  */
 double distanceBetweenPointAndLineFromPointAtoPointB(MAMapPoint pointP, MAMapPoint pointA, MAMapPoint pointB);
-
-#pragma mark - math 
 
 /*!
  计算点到点的向量

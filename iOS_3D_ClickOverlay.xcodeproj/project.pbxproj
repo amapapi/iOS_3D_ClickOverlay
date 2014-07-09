@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81D4FDB196D48A600099DAC /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FD8196D48A600099DAC /* BaseMapViewController.m */; };
+		C81D4FDC196D48A600099DAC /* ClickOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FDA196D48A600099DAC /* ClickOverlayViewController.m */; };
+		C81D4FE1196D48BA00099DAC /* SelectableOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FDE196D48BA00099DAC /* SelectableOverlay.m */; };
+		C81D4FE2196D48BA00099DAC /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FE0196D48BA00099DAC /* Utility.m */; };
 		C8471078196B968500ED0DD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471077196B968500ED0DD7 /* Foundation.framework */; };
 		C847107A196B968500ED0DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471079196B968500ED0DD7 /* CoreGraphics.framework */; };
 		C847107C196B968500ED0DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C847107B196B968500ED0DD7 /* UIKit.framework */; };
@@ -15,13 +19,9 @@
 		C84710F4196B97E700ED0DD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710F3196B97E700ED0DD7 /* SystemConfiguration.framework */; };
 		C84710F6196B980600ED0DD7 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710F5196B980600ED0DD7 /* libstdc++.6.0.9.dylib */; };
 		C84710F8196B985A00ED0DD7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710F7196B985A00ED0DD7 /* libz.1.2.5.dylib */; };
-		C847117C196BF38900ED0DD7 /* SelectableOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471171196BF38900ED0DD7 /* SelectableOverlay.m */; };
 		C847117D196BF38900ED0DD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8471172196BF38900ED0DD7 /* Images.xcassets */; };
-		C847117E196BF38900ED0DD7 /* ClickOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471175196BF38900ED0DD7 /* ClickOverlayViewController.m */; };
-		C847117F196BF38900ED0DD7 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471176196BF38900ED0DD7 /* BaseMapViewController.m */; };
 		C8471180196BF38900ED0DD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471178196BF38900ED0DD7 /* AppDelegate.m */; };
 		C8471181196BF38900ED0DD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471179196BF38900ED0DD7 /* main.m */; };
-		C8471182196BF38900ED0DD7 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C847117B196BF38900ED0DD7 /* Utility.m */; };
 		C8471185196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8471183196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Info.plist */; };
 		C8471188196BF42200ED0DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8471186196BF42200ED0DD7 /* InfoPlist.strings */; };
 		C847118A196BF44100ED0DD7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471189196BF44100ED0DD7 /* MAMapKit.framework */; };
@@ -33,7 +33,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8471074196B968500ED0DD7 /* iOS_3D_ClickOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_3D_ClickOverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81D4FD7196D48A600099DAC /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseMapViewController.h; path = Demo/BaseMapViewController.h; sourceTree = "<group>"; };
+		C81D4FD8196D48A600099DAC /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseMapViewController.m; path = Demo/BaseMapViewController.m; sourceTree = "<group>"; };
+		C81D4FD9196D48A600099DAC /* ClickOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClickOverlayViewController.h; path = Demo/ClickOverlayViewController.h; sourceTree = "<group>"; };
+		C81D4FDA196D48A600099DAC /* ClickOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClickOverlayViewController.m; path = Demo/ClickOverlayViewController.m; sourceTree = "<group>"; };
+		C81D4FDD196D48BA00099DAC /* SelectableOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectableOverlay.h; path = ClickOverlay/SelectableOverlay.h; sourceTree = "<group>"; };
+		C81D4FDE196D48BA00099DAC /* SelectableOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectableOverlay.m; path = ClickOverlay/SelectableOverlay.m; sourceTree = "<group>"; };
+		C81D4FDF196D48BA00099DAC /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = ClickOverlay/Utility.h; sourceTree = "<group>"; };
+		C81D4FE0196D48BA00099DAC /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = ClickOverlay/Utility.m; sourceTree = "<group>"; };
+		C8471074196B968500ED0DD7 /* iOS_3D_ClickOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iOS_3D_ClickOverlay.app; path = ClickOverlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8471077196B968500ED0DD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8471079196B968500ED0DD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C847107B196B968500ED0DD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -44,18 +52,10 @@
 		C84710F5196B980600ED0DD7 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		C84710F7196B985A00ED0DD7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		C847116F196BF38900ED0DD7 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
-		C8471170196BF38900ED0DD7 /* SelectableOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectableOverlay.h; path = iOS_3D_ClickOverlay/SelectableOverlay.h; sourceTree = SOURCE_ROOT; };
-		C8471171196BF38900ED0DD7 /* SelectableOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectableOverlay.m; path = iOS_3D_ClickOverlay/SelectableOverlay.m; sourceTree = SOURCE_ROOT; };
 		C8471172196BF38900ED0DD7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = iOS_3D_ClickOverlay/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		C8471173196BF38900ED0DD7 /* ClickOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClickOverlayViewController.h; path = iOS_3D_ClickOverlay/ClickOverlayViewController.h; sourceTree = SOURCE_ROOT; };
-		C8471174196BF38900ED0DD7 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseMapViewController.h; path = iOS_3D_ClickOverlay/BaseMapViewController.h; sourceTree = SOURCE_ROOT; };
-		C8471175196BF38900ED0DD7 /* ClickOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClickOverlayViewController.m; path = iOS_3D_ClickOverlay/ClickOverlayViewController.m; sourceTree = SOURCE_ROOT; };
-		C8471176196BF38900ED0DD7 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseMapViewController.m; path = iOS_3D_ClickOverlay/BaseMapViewController.m; sourceTree = SOURCE_ROOT; };
 		C8471177196BF38900ED0DD7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOS_3D_ClickOverlay/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		C8471178196BF38900ED0DD7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOS_3D_ClickOverlay/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		C8471179196BF38900ED0DD7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS_3D_ClickOverlay/main.m; sourceTree = SOURCE_ROOT; };
-		C847117A196BF38900ED0DD7 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = iOS_3D_ClickOverlay/Utility.h; sourceTree = SOURCE_ROOT; };
-		C847117B196BF38900ED0DD7 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = iOS_3D_ClickOverlay/Utility.m; sourceTree = SOURCE_ROOT; };
 		C8471183196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "iOS_3D_ClickOverlay-Info.plist"; path = "iOS_3D_ClickOverlay/iOS_3D_ClickOverlay-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C8471184196BF3C400ED0DD7 /* iOS_3D_ClickOverlay-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "iOS_3D_ClickOverlay-Prefix.pch"; path = "iOS_3D_ClickOverlay/iOS_3D_ClickOverlay-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		C8471187196BF42200ED0DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = iOS_3D_ClickOverlay/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
@@ -87,6 +87,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C81D4FD5196D37E400099DAC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FD7196D48A600099DAC /* BaseMapViewController.h */,
+				C81D4FD8196D48A600099DAC /* BaseMapViewController.m */,
+				C81D4FD9196D48A600099DAC /* ClickOverlayViewController.h */,
+				C81D4FDA196D48A600099DAC /* ClickOverlayViewController.m */,
+				C847116E196BF38900ED0DD7 /* Configuration */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		C81D4FD6196D37F600099DAC /* ClickOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FDD196D48BA00099DAC /* SelectableOverlay.h */,
+				C81D4FDE196D48BA00099DAC /* SelectableOverlay.m */,
+				C81D4FDF196D48BA00099DAC /* Utility.h */,
+				C81D4FE0196D48BA00099DAC /* Utility.m */,
+			);
+			name = ClickOverlay;
+			sourceTree = "<group>";
+		};
 		C847106B196B968500ED0DD7 = {
 			isa = PBXGroup;
 			children = (
@@ -125,18 +148,11 @@
 		C847107D196B968500ED0DD7 /* iOS_3D_ClickOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				C847116E196BF38900ED0DD7 /* Configuration */,
-				C8471170196BF38900ED0DD7 /* SelectableOverlay.h */,
-				C8471171196BF38900ED0DD7 /* SelectableOverlay.m */,
-				C8471173196BF38900ED0DD7 /* ClickOverlayViewController.h */,
-				C8471175196BF38900ED0DD7 /* ClickOverlayViewController.m */,
-				C8471174196BF38900ED0DD7 /* BaseMapViewController.h */,
-				C8471176196BF38900ED0DD7 /* BaseMapViewController.m */,
 				C8471177196BF38900ED0DD7 /* AppDelegate.h */,
 				C8471178196BF38900ED0DD7 /* AppDelegate.m */,
-				C847117A196BF38900ED0DD7 /* Utility.h */,
-				C847117B196BF38900ED0DD7 /* Utility.m */,
 				C847118D196BF5F600ED0DD7 /* Main.storyboard */,
+				C81D4FD6196D37F600099DAC /* ClickOverlay */,
+				C81D4FD5196D37E400099DAC /* Demo */,
 				C8471172196BF38900ED0DD7 /* Images.xcassets */,
 				C847107E196B968500ED0DD7 /* Supporting Files */,
 			);
@@ -236,12 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8471182196BF38900ED0DD7 /* Utility.m in Sources */,
+				C81D4FDB196D48A600099DAC /* BaseMapViewController.m in Sources */,
+				C81D4FE1196D48BA00099DAC /* SelectableOverlay.m in Sources */,
 				C8471180196BF38900ED0DD7 /* AppDelegate.m in Sources */,
-				C847117E196BF38900ED0DD7 /* ClickOverlayViewController.m in Sources */,
-				C847117F196BF38900ED0DD7 /* BaseMapViewController.m in Sources */,
 				C8471181196BF38900ED0DD7 /* main.m in Sources */,
-				C847117C196BF38900ED0DD7 /* SelectableOverlay.m in Sources */,
+				C81D4FE2196D48BA00099DAC /* Utility.m in Sources */,
+				C81D4FDC196D48A600099DAC /* ClickOverlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
