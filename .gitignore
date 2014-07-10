@@ -12,6 +12,6 @@ build/
 *.mode2v3
 
 xcuserdata
-*.xccheckout 
+*.xccheckout
 
-APIKey.h
+iOS_3D_ClickOverlay/Configuration/APIKey.h 

@@ -106,11 +106,11 @@
             /* 获取overlay对应的view. */
             MAOverlayPathView * View = (MAOverlayPathView *)[self.mapView viewForOverlay:selectableOverlay];
             
-            /* 把屏幕坐标转换为MAMap坐标. */
+            /* 把屏幕坐标转换为MAMapPoint坐标. */
             MAMapPoint mapPoint = MAMapPointForCoordinate([self.mapView convertPoint:touchLocation toCoordinateFromView:self.mapView]);
-            /* overlay的线宽换算到MAMap坐标系的宽度. */
-            double mapPointDistance = View.lineWidth * [self mapPointsPerPointInViewAtCurrentZoomLevel];
-
+            /* overlay的线宽换算到MAMapPoint坐标系的宽度. */
+            double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * View.lineWidth;
+            
             /* 判断是否选中了overlay. */
             if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
             {
