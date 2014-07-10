@@ -31,9 +31,10 @@ BOOL isMAPolylineNearPointAtDistanceThreshold(MAPolyline *polyline, MAMapPoint p
 }
 
 /*!
- 判断点是否在overlay的封闭图形中
+ 判断点是否在overlay的图形中
  @param overlay 指定的overlay
  @param point   指定的点
+ @param mapPointDistance 提供overlay的线宽（需换算到MAMapPoint坐标系）
  @return 若点在overlay中，返回YES，否则NO
  */
 BOOL isOverlayWithLineWidthContainsPoint(id<MAOverlay> overlay, double mapPointDistance, MAMapPoint mapPoint)
