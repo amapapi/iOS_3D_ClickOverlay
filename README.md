@@ -13,21 +13,23 @@ MAMapKit 点击选中overlay
 
 - ClickOverlay文件夹下的代码可以支持实现MAOverlay的点击，包括MAPolygon、MAPolyline、MACircle。
 - Utility提供如下方法判断点point是否在overlay图形内。
-```objc
+
+```
 BOOL isOverlayWithLineWidthContainsPoint(id<MAOverlay> overlay, double mapPointDistance, MAMapPoint mapPoint)
 ```
-* 其中参数mapPointDistance提供了overlay的线宽（需换算到MAMapPoint坐标系）。对非封闭图形MAPolyline，若点距MAPolyline的距离小于距离门限，则认为点在图形内。距离门限设置为4倍mapPointDistance。
+- 其中参数mapPointDistance提供了overlay的线宽（需换算到MAMapPoint坐标系）。对非封闭图形MAPolyline，若点距MAPolyline的距离小于距离门限，则认为点在图形内。距离门限设置为4倍mapPointDistance。
 - 举个例子,判断点touchLocation是否在selectableOverlay内。
-```objc
-/* 把屏幕坐标转换为MAMapPoint坐标. */
+
+```
+// 把屏幕坐标转换为MAMapPoint坐标.
 MAMapPoint mapPoint = MAMapPointForCoordinate([self.mapView convertPoint:touchLocation toCoordinateFromView:self.mapView]);
-/* overlay的线宽换算到MAMapPoint坐标系的宽度. */
+// overlay的线宽换算到MAMapPoint坐标系的宽度.
 double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * View.lineWidth;
               
-/* 判断是否选中了overlay. */
+//判断是否选中了overlay.
 if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
 {
-    /* ... */
+    // ... 
 }
 ```
 详见工程Demo文件夹。
